@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Geek Label</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="stylesheets/style.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<section class="first-sec height-100">
+		<div class="bg-div geek-label-div">
+			<img src="images/Geek-Label.png" alt="spec" class="img-center geek-label"/>
+			<p class="para-text">A team of self confessed geeks who are all about great digital design</p>
+			<span id="downArrow-1" class="down-arrow scroller-white"><span>
+		</div>
+	</section>
+	<section class="second-sec height-100">
+		<div class="bg-div">
+			<img src="images/second-img.png" alt="spec" class="img-center"/> 
+			<p class="para-text second-section-text">Some agencies love <span class="text-pink">design</span>, but don't how to build</p>
+			<span id="downArrow-2" class="down-arrow scroller-white pink-btn"><span>
+		</div>
+	</section>
+	
+	<section class="second-sec height-100">
+		<div class="bg-div">
+			<img src="images/third-img.png" alt="spec" class="img-center"/> 
+			<p class="para-text second-section-text">Some agencies know how to <span class="text-pink">build</span>, but can't do design</p>
+			<span id="downArrow-3" class="down-arrow scroller-white pink-btn"><span>
+		</div>
+	</section>
+	
+	<section class="second-sec height-100">
+		<div class="bg-div">
+			<img src="images/fourth-img.png" alt="spec" class="img-center"/> 
+			<p class="para-text second-section-text">We love <span class="text-pink">both</span></p>
+			<span id="downArrow-4" class="down-arrow scroller-white pink-btn"><span>
+		</div>
+	</section>
+	
+	<section class="height-100">
+		<span class="center-text service-header color-gray-text">Services</span>
+		<div class="bg-round-div">
+			<div class="response-div">
+				<div class="round-div">
+					<img src="images/web-dev.png" alt="Web Design" class="service-icon"/>
+				</div>
+				<h2 class="center-text color-gray-text">Web Devlopment</h2>
+			</div>
+			<div class="response-div">
+				<div class="round-div">
+					<img src="images/design.png" alt="Web Design" class="service-icon"/>
+				</div>
+				<h2 class="center-text color-gray-text">Design</h2>
+			</div>
+			<div class="response-div">
+				<div class="round-div">
+					<img src="images/branding.png" alt="Web Design" class="service-icon"/>
+				</div>
+				<h2 class="center-text color-gray-text">Branding</h2>
+			</div>
+			<div class="response-div">
+				<div class="round-div">
+					<img src="images/UX.png" alt="Web Design" class="service-icon"/>
+				</div>
+				<h2 class="center-text color-gray-text">UX Research</h2>
+			</div>
+		</div>
+		<span id="downArrow-5" class="down-arrow gray-btn scroller"><span>
+		
+		
+	</section>
+	
+	<section class="second-sec height-100">
+		<span class="center-text service-header color-gray-text">Clients</span>
+		<div class="bg-round-div">
+			<div class="client-response-div">
+				<div class="round-div color-transparent">
+					<img src="images/photo-gallery.png" alt="Web Design" class="service-icon client-icon"/>
+				</div>
+			</div>
+			<div class="client-response-div">
+				<div class="round-div color-transparent">
+					<img src="images/vegain.png" alt="Web Design" class="service-icon client-icon"/>
+				</div>
+			</div>
+			<div class="client-response-div">
+				<div class="round-div color-transparent">
+					<img src="images/PSHE.png" alt="Web Design" class="service-icon client-icon"/>
+				</div>
+			</div>
+		</div>
+		<span id="downArrow-6" class="down-arrow gray-btn scroller"><span>
+		
+		
+	</section>
+	
+	
+	
+	<section class="second-sec height-100">
+		<span class="center-text service-header color-gray-text">How to find us</span>
+		<div class="map-bg-div">
+			<img src="images/map.png" alt="MAP" class="map-image"/>
+		</div>
+		<span id="downArrow-7" class="down-arrow pink-btn scroller-white"><span>
+	</section>
+	
+	<section class="second-sec height-100">
+		<span class="center-text service-header color-gray-text">Contact</span>
+		<div class="inputfild-bg">
+			<input type="text" placeholder="Name" class="text-box"/>
+			<input type="text" placeholder="Email" class="text-box"/>
+			<textarea placeholder="Message" class="text-box contact-textarea"></textarea>
+			<button type="button" placeholder="Message" class="submit-cls">Send Message!</button>
+			<span class="number-span">Or phone on: 01923 220121</span>
+		</div>
+	</section>
+</body>
+<script>
+$(document).ready(function(){
+	$('.height-100').height($(window).height());
+	$('.down-arrow').click(function(){
+		var selectedPane = parseInt($(this).prop('id').split('-')[1]);
+		$('html, body').animate({scrollTop: selectedPane * $(window).height()}, 500);
+	});
+});
+
+</script>
+</html>
+
